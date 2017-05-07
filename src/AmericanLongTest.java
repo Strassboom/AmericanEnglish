@@ -7,6 +7,7 @@ public class AmericanLongTest{
 	private String one;
 	private String ten;
 	private String teen;
+	private String tens;
 	@Test public void zero(){
 		try{
 			zero = AmericanLong.one(0);
@@ -25,10 +26,19 @@ public class AmericanLongTest{
 			e.getMessage();
 		}
 	}
-	@Test public void ten(){
+	@Test public void teen(){
 		try{
-			ten = AmericanLong.one(10);
-			assertEquals("ten", ten);
+			teen = AmericanLong.one(14);
+			assertEquals("fourteen", teen);
+		}
+		catch(Exception e){
+			e.getMessage();
+		}
+	}
+	@Test public void tens(){
+		try{
+			tens = AmericanLong.one(20);
+			assertEquals("twenty five", tens);
 		}
 		catch(Exception e){
 			e.getMessage();
