@@ -8,6 +8,7 @@ public class AmericanLongTest{
 	private String ten;
 	private String teen;
 	private String tens;
+	private String hundreds;
 	@Test public void zero(){
 		try{
 			zero = AmericanLong.one(0);
@@ -37,8 +38,17 @@ public class AmericanLongTest{
 	}
 	@Test public void tens(){
 		try{
-			tens = AmericanLong.one(99);
-			assertEquals("ninety nine", tens);
+			tens = AmericanLong.one(95);
+			assertEquals("ninety five", tens);
+		}
+		catch(Exception e){
+			e.getMessage();
+		}
+	}
+	@Test public void hundreds(){
+		try{
+		hundreds = AmericanLong.one(247);
+		assertEquals("two hundred eighty", hundreds);
 		}
 		catch(Exception e){
 			e.getMessage();
