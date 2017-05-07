@@ -1,5 +1,5 @@
 public class AmericanLong{
-	private String[] ones = {"ty","one","two","three","four","five","six","seven","eight","nine"};
+	private static String[] ones = {"ty","one","two","three","four","five","six","seven","eight","nine"};
 	private String[] teens = {"eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"};
 	private String[] tens = {"ten","twenty","thirty"};
 	public static String one(int a){
@@ -7,7 +7,10 @@ public class AmericanLong{
 		if(a < 10){
 			if(a != 0){
 				//String number = ones[a];
-				b = String.valueOf(a);
+				b = ones[a];
+			}
+			else{
+				b = "zero";
 			}
 		}
 		return b;

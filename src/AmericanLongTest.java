@@ -6,8 +6,8 @@ public class AmericanLongTest{
 	private String one;
 	@Test public void ones(){
 		try{
-			String one = AmericanLong.one(11);
-			assertEquals("2", one);
+			String one = AmericanLong.one(2);
+			assertEquals("two", one);
 		}
 		catch(Exception e){
 			e.getMessage();
