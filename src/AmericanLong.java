@@ -25,7 +25,12 @@ public class AmericanLong{
 			}
 			else{
 				int c = a/10 * 10;
-				b = tens[a/10] + ones[a - c];
+				if(a-c > 0){
+					b = tens[a/10] + tens[0] + " " + ones[a - c];
+				}
+				else{
+					b = tens[a/10] + tens[0];
+				}
 				System.out.println(b);
 				return b;
 			}

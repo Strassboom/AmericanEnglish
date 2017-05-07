@@ -37,8 +37,8 @@ public class AmericanLongTest{
 	}
 	@Test public void tens(){
 		try{
-			tens = AmericanLong.one(20);
-			assertEquals("twenty six", tens);
+			tens = AmericanLong.one(99);
+			assertEquals("ninety nine", tens);
 		}
 		catch(Exception e){
 			e.getMessage();
