@@ -13,6 +13,9 @@ public class AmericanLong{
 				b = "zero";
 			}
 		}
+		else if(a == 10){
+			b = "ten";
+		}
 		return b;
 	}
 }
