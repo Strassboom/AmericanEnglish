@@ -9,7 +9,7 @@ public class AmericanLongTest{
 	private String teen;
 	@Test public void zero(){
 		try{
-			zero = AmericanLong.one(0);
+			zero = AmericanLong.one(1);
 			assertEquals("zero", zero);
 		}
 		catch(Exception e){
