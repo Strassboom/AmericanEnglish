@@ -27,7 +27,7 @@ public class AmericanLongTest{
 	}
 	@Test public void ten(){
 		try{
-			ten = AmericanLong.one(0);
+			ten = AmericanLong.one(10);
 			assertEquals("ten", ten);
 		}
 		catch(Exception e){
