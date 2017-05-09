@@ -113,7 +113,7 @@ public class AmericanLongTest{
 	}
 	@Test public void hundredmillions(){
 		try{
-			hundredmillions = AmericanLong.one(187465191);
+			hundredmillions = AmericanLong.one(187465190);
 			assertEquals("one hundred eighty seven million four hundred sixty five thousand one hundred ninety", hundredmillions);
 		}
 		catch(Exception e){
