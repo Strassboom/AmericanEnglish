@@ -104,7 +104,7 @@ public class AmericanLongTest{
 	}
 	@Test public void tenmillions(){
 		try{
-			tenmillions = AmericanLong.one(36029146);
+			tenmillions = AmericanLong.one(36029145);
 			assertEquals("thirty six million twenty nine thousand one hundred forty five", tenmillions);
 		}
 		catch(Exception e){
