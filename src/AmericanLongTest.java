@@ -65,7 +65,7 @@ public class AmericanLongTest{
 	}
 	@Test public void thousands(){
 		try{
-			thousands = AmericanLong.one(3691);
+			thousands = AmericanLong.one(3690);
 			assertEquals("three thousand six hundred ninety", thousands);
 			//System.out.print(thousands);
 		}
