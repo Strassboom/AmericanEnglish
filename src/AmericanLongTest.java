@@ -93,16 +93,16 @@ public class AmericanLongTest{
 			e.getMessage();
 		}
 	}
-	/**
 	@Test public void millions(){
 		try{
-			millions = AmericanLong.one(8234102);
+			millions = AmericanLong.one(8234101);
 			assertEquals("eight million two hundred thirty four thousand one hundred two", millions);
 		}
 		catch(Exception e){
 			e.getMessage();
 		}
 	}
+	/**
 	@Test public void tenmillions(){
 		try{
 			tenmillions = AmericanLong.one(36029145);
