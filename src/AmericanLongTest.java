@@ -15,9 +15,6 @@ public class AmericanLongTest{
 	private String tenmillions;
 	private String hundredmillions;
 	private String billions;
-	private String tenbillions;
-	private String hundredbillions;
-	private String trillions;
 	@Test public void zero(){
 		try{
 			zero = AmericanLong.one(0);
@@ -122,9 +119,8 @@ public class AmericanLongTest{
 	}
 	@Test public void billions(){
 		try{
-			billions = AmericanLong.one(2147483648);
+			billions = AmericanLong.one(2147483647);
 			assertEquals("two billion one hundred forty seven million four hundred eighty three thousand six hundred forty seven", billions);
-			System.out.print(billions);
 		}
 		catch(Exception e){
 			e.getMessage();
