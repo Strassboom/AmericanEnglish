@@ -85,7 +85,7 @@ public class AmericanLongTest{
 	}
 	@Test public void hundredthousands(){
 		try{
-			hundredthousands = AmericanLong.one(985622);
+			hundredthousands = AmericanLong.one(985621);
 			assertEquals("nine hundred eighty five thousand six hundred twenty one", hundredthousands);
 			//System.out.print(hundredthousands);
 		}
