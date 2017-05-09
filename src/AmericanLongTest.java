@@ -73,10 +73,9 @@ public class AmericanLongTest{
 			e.getMessage();
 		}
 	}
-	/**
 	@Test public void tenthousands(){
 		try{
-			tenthousands = AmericanLong.one(27176);
+			tenthousands = AmericanLong.one(27177);
 			assertEquals("twenty seven thousand one hundred seventy six", tenthousands);
 			//System.out.print(tenthousands);
 		}
@@ -84,6 +83,7 @@ public class AmericanLongTest{
 			e.getMessage();
 		}
 	}
+	/**
 	@Test public void hundredthousands(){
 		try{
 			hundredthousands = AmericanLong.one(985621);
