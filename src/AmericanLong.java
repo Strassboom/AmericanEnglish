@@ -92,7 +92,6 @@ public class AmericanLong{
 								//System.out.println(b);
 								return b;
 							}
-							/**
 							else{
 								if(a < 1000000){                                                                         
 									String aSplittable = Integer.toString(a);
@@ -124,6 +123,7 @@ public class AmericanLong{
 									//System.out.println(b);
 									return b;
 								}
+								/**
 								else{
 									if(a < 10000000){                                                                         
 										String aSplittable = Integer.toString(a);
@@ -300,8 +300,8 @@ public class AmericanLong{
 										}
 									}
 								}
+								*/
 							}
-							*/
 						}
 					}
 					return b;
